@@ -1,12 +1,13 @@
 # Rhythmica15
 This is a homemade macro pad specifically designed for playing with the Bard job in FINAL FANTASY XIV.
 
-![Rhythmica15](./image/rythumica15.png)
 ---
 
 ## 概要
 
 ゲーム内のキーアサインと同じ配列を採用し、演奏をより快適に行うことを目的として製作されました。白鍵と黒鍵の段差を再現するため、それぞれ異なるプロファイルのキーキャップを使用しているのが特徴です。
+
+[!['Youtube'](./image/rythumica15demo.png)](https://youtu.be/TGSGsOt75hQ)
 
 ---
 

@@ -1,15 +1,13 @@
 # Rhythmica15
 This is a homemade macro pad specifically designed for playing with the Bard job in FINAL FANTASY XIV.
-
-![Rhythmica15](./image/rythumica15.png)
 ---
 
 ## Overview
 
 It was created to make in-game performance more comfortable by adopting the same key layout as in the game. To reproduce the difference in height between white and black keys, keycaps with different profiles are used.
 
+[!['Youtube'](./image/rythumica15demo.png)](https://youtu.be/TGSGsOt75hQ)
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">自作キーボードで「そして世界へ」を練習していました。<br>危うい手つきで頑張っています！<br>一番左下のボタンはShiftキーを割り当てていますが、1回タップした後長押しするとCtrlキーになり、半音下がるようにしています。<a href="https://twitter.com/hashtag/%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89?src=hash&amp;ref_src=twsrc%5Etfw">#自作キーボード</a> <a href="https://twitter.com/hashtag/FFXIV?src=hash&amp;ref_src=twsrc%5Etfw">#FFXIV</a> <a href="https://twitter.com/hashtag/FF14?src=hash&amp;ref_src=twsrc%5Etfw">#FF14</a> <a href="https://twitter.com/hashtag/CustomKeyboard?src=hash&amp;ref_src=twsrc%5Etfw">#CustomKeyboard</a> <a href="https://t.co/cwKdLyWgvy">pic.twitter.com/cwKdLyWgvy</a></p>&mdash; モゲ三郎 (@Moge313101) <a href="https://twitter.com/Moge313101/status/1948987830791012719?ref_src=twsrc%5Etfw">July 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 ## Features
