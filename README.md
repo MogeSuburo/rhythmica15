@@ -26,6 +26,7 @@ This is a homemade macro pad specifically designed for playing with the Bard job
 * **MCU:** RP2040-Zero
 * **キースイッチ:** EPOMAKER Zebra 40gfリニアメカニカルキーボードスイッチ
 * **キーキャップ:** DASプロファイル（白鍵）、XDAプロファイル（黒鍵）
+* **サイズ:** 204mm * 42mm * 20mm 
 
 ### ゲームの内のキー配列
 ![keymap](./image/keyboardpict.png)
@@ -33,6 +34,20 @@ This is a homemade macro pad specifically designed for playing with the Bard job
 ### Rhythmica15のキーマップ
 ![keymap](./image/keymap.png)
 ---
+
+## 部品一覧
+* 1 x RP2024-Zero
+* 15 x diodes 1N4148
+* 15 x Mechanical switches
+* 6 x XDA Profile keycaps of choice
+* 9 x DAS Profile keycaps of choice
+* 24 AWG wire
+* 6 x M2x3x3.2 OD heat inserts
+* 6 x M2x10 Allen head screws
+* Enameled wire 0.6mm 16cm
+* 3D Print Parts<br>
+  **Data Thingiverse** 
+[https://www.thingiverse.com/thing:7102121](https://www.thingiverse.com/thing:7102121)
 
 ## ビルド方法
 
@@ -70,17 +85,29 @@ cols(縦)とrows横の列のMCUに配線していきます。
 ![keymap](./image/pict02.png)
 
 ### 6.  ファームウェアを書き込み、Vialでキーマップを設定します。
-RP2024-ZeroをUSBでパソコンに接続し、bootスイッチを押しながら、resetスイッチを押して、同時に離します。
-すると、RP2024-Zeroがドライブとして認識しますので、firmwareフォルダ内にある「rhythmica15_vial.uf2」を書き込んでください。
+RP2024-ZeroをUSBでパソコンに接続し、bootスイッチを押しながら、resetスイッチを押して、同時に離します。<br>
+すると、RP2024-Zeroがドライブとして認識しますので、firmwareフォルダ内にある「rhythmica15_vial.uf2」を書き込んでください。<br>
+vialをサイトにアクセスし、Rhythmica15を認識させます。<br>
+各キーが正常に動作するかMatrix testerを使って確認してください。
 
-### 7.キーマップ確認
+### 7.トップケースとボトムケースをネジで取り付けます。
+正常に動作することを確認してから6つのネジでトップケースとボトムケースを取り付けます。<br>
+背面の隅にはシリコンの滑り止めも取り付けます。
+![vialkeymap](./image/pict13.png)
+
+
+### 8.キーマップ確認
 vialをサイトにアクセスし、Rhythmica15を認識させます。
 デフォルトでは図のようなキーマップになっています。
 
 ![vialkeymap](./image/vial.png)
+
 下図のようにTapDanceを左下のキーに設定した方がつい買いやすいかもしれません。
+
 お好みで設定を変更してください。
+
 ![tapdance1](./image/tapdance.png)
+
 ![tapdance2](./image/tapdance2.png)
 
 ---
