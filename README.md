@@ -4,38 +4,38 @@ This is a homemade macro pad specifically designed for playing with the Bard job
 ![Rhythmica15](./image/rythumica15.png)
 ---
 
-## 概要
+## Overview
 
-ゲーム内のキーアサインと同じ配列を採用し、演奏をより快適に行うことを目的として製作されました。白鍵と黒鍵の段差を再現するため、それぞれ異なるプロファイルのキーキャップを使用しているのが特徴です。
-
----
-
-## 特徴
-
-* **ゲーム特化:** 『FINAL FANTASY XIV』の吟遊詩人ジョブの演奏に最適なキー配列。
-* **キーキャップ:** 白鍵に**DASプロファイル**、黒鍵に**XDAプロファイル**のキーキャップを採用し、鍵盤の段差を再現。
-* **キースイッチ:** 打鍵感を統一するため、すべてのキーに同じキースイッチを使用。
-* **ファームウェア:** **Vial**に対応しており、キーマップの変更が容易。
-* **機能:** 左下のキーに**Tap Dance**でオクターブ切り替え（Shift/Ctrl）機能を割り当て。
+It was created to make in-game performance more comfortable by adopting the same key layout as in the game. To reproduce the difference in height between white and black keys, keycaps with different profiles are used.
 
 ---
 
-## 仕様
+## Features
 
-* **キー数:** 15キー
+* **Game-oriented:** Optimized key layout for Bard performance in FINAL FANTASY XIV.
+* **Keycaps:** Uses **DAS profile** for white keys and **XDA profile** for black keys to reproduce the step of a keyboard.
+* **Key switches:** All keys use the same switch for a unified typing feel.
+* **Firmware:** Compatible with **Vial**, making keymap changes easy.
+* **Function:** The lower left key is assigned an octave switch (Shift/Ctrl) function using **Tap Dance**.
+
+---
+
+## Specifications
+
+* **Number of keys:** 15
 * **MCU:** RP2040-Zero
-* **キースイッチ:** EPOMAKER Zebra 40gfリニアメカニカルキーボードスイッチ
-* **キーキャップ:** DASプロファイル（白鍵）、XDAプロファイル（黒鍵）
-* **サイズ:** 204mm * 42mm * 20mm 
+* **Key switches:** EPOMAKER Zebra 40gf linear mechanical keyboard switches
+* **Keycaps:** DAS profile (white keys), XDA profile (black keys)
+* **Size:** 204mm * 42mm * 20mm 
 
-### ゲームの内のキー配列
+### In-game key layout
 ![keymap](./image/keyboardpict.png)
 
-### Rhythmica15のキーマップ
+### Rhythmica15 keymap
 ![keymap](./image/keymap.png)
 ---
 
-## 部品一覧
+## Parts List
 * 1 x RP2024-Zero
 * 15 x diodes 1N4148
 * 15 x Mechanical switches
@@ -49,62 +49,61 @@ This is a homemade macro pad specifically designed for playing with the Bard job
   **Data Thingiverse** 
 [https://www.thingiverse.com/thing:7102121](https://www.thingiverse.com/thing:7102121)
 
-## ビルド方法
+## Build Instructions
 
-### 1.  3D CADで作成したトップパーツとボトムパーツを3Dプリンターで出力します。
-パーツはThingiverseの下記のページからダウンロードできます。
+### 1. Print the top and bottom parts created with 3D CAD using a 3D printer.
+Parts can be downloaded from the following Thingiverse page.
 
 [https://www.thingiverse.com/thing:7102121](https://www.thingiverse.com/thing:7102121)
 
 ![keymap](./image/pict01.png)
 
-### 2.  トップパーツにキースイッチを取り付けます。
+### 2. Install the key switches into the top part.
 ![keymap](./image/pict08.png)
 
-### 3.  キースイッチとMCU（RP2040-Zero）をハンドワイヤーで配線します。
-配線は下記のように配線します。
+### 3. Wire the key switches and MCU (RP2040-Zero) by hand.
+Wire as shown below.
 ![keymap](./image/wire.png)
 
-### 4.  トップケースは裏面なので、上記の図とは反対になっています。
-リード線とダイオードを取り付けます。
-下の写真ではついでにヒートインサーとも取り付けてます。
+### 4. The top case is the back side, so it is the reverse of the diagram above.
+Attach the lead wires and diodes.
+In the photo below, the heat inserts are also attached.
 ![keymap](./image/pict09.png)
-ダイオードの向きに注意してください。アノードとカノードの向きは下の写真のようになっています。
-アノード側をスイッチのピンにはんだで取り付けます。
+Pay attention to the direction of the diodes. The orientation of the anode and cathode is as shown in the photo below.
+Solder the anode side to the switch pin.
 ![keymap](./image/pict10.png)
 
-ダイオードのアノード側を横に折り曲げて、繋げていきます。
+Bend the anode side of the diode sideways and connect them.
 ![keymap](./image/pict11.png)
 
-### 5.  RP2024-Zeroに配線してます。
-トップケースの左側にあるMCUのマウントにRP2024-Zeroを取っ付けます。
+### 5. Wiring to RP2024-Zero.
+Mount the RP2024-Zero on the MCU mount on the left side of the top case.
 ![keymap](./image/mcu.png)
-cols(縦)とrows横の列のMCUに配線していきます。
+Wire to the cols (vertical) and rows (horizontal) pins of the MCU.
 ![keymap](./image/pict12.png)
-ちょっと雑な配線になっていますが、間違えないように配線していきます。
+The wiring is a bit messy, but make sure not to make mistakes.
 ![keymap](./image/pict02.png)
 
-### 6.  ファームウェアを書き込み、Vialでキーマップを設定します。
-RP2024-ZeroをUSBでパソコンに接続し、bootスイッチを押しながら、resetスイッチを押して、同時に離します。<br>
-すると、RP2024-Zeroがドライブとして認識しますので、firmwareフォルダ内にある「rhythmica15_vial.uf2」を書き込んでください。<br>
-vialをサイトにアクセスし、Rhythmica15を認識させます。<br>
-各キーが正常に動作するかMatrix testerを使って確認してください。
+### 6. Write the firmware and set the keymap with Vial.
+Connect the RP2024-Zero to your PC via USB, press and hold the boot switch, then press the reset switch, and release both at the same time.<br>
+RP2024-Zero will be recognized as a drive, so write "rhythmica15_vial.uf2" from the firmware folder.<br>
+Access the Vial site and recognize Rhythmica15.<br>
+Check each key with Matrix tester to make sure they work properly.
 
-### 7.トップケースとボトムケースをネジで取り付けます。
-正常に動作することを確認してから6つのネジでトップケースとボトムケースを取り付けます。<br>
-背面の隅にはシリコンの滑り止めも取り付けます。
+### 7. Attach the top and bottom cases with screws.
+After confirming normal operation, attach the top and bottom cases with six screws.<br>
+Attach silicone anti-slip pads to the corners on the back.
 ![vialkeymap](./image/pict13.png)
 
-
-### 8.キーマップ確認
-vialをサイトにアクセスし、Rhythmica15を認識させます。
-デフォルトでは図のようなキーマップになっています。
+### 8. Keymap confirmation
+Access the Vial site and recognize Rhythmica15.
+By default, the keymap is as shown in the diagram.
 
 ![vialkeymap](./image/vial.png)
 
-下図のようにTapDanceを左下のキーに設定した方がつい買いやすいかもしれません。
+It may be easier to use if you set TapDance to the lower left key as shown below.
 
-お好みで設定を変更してください。
+Feel free to change the settings as you like.
 
 ![tapdance1](./image/tapdance.png)
 
@@ -112,8 +111,8 @@ vialをサイトにアクセスし、Rhythmica15を認識させます。
 
 ---
 
-## まとめ
+## Summary
 
-ゲーム内の演奏をリアルな鍵盤のように操作したいという想いから製作してみました。
-キーキャップのプロファイルを使い分けることで、実際のピアノのような操作感を目指しています。<br>
-フォードバックを貰えたらうれしいです。
+I made this because I wanted to play in-game music as if using a real keyboard.
+By using different keycap profiles, I aimed for an operation feel similar to a real piano.<br>
+I would be happy to receive feedback.
