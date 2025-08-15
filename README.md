@@ -47,7 +47,7 @@ It was created to make in-game performance more comfortable by adopting the same
 * Enameled wire 0.6mm 16cm
 * 3D Print Parts<br>
   **Data Thingiverse** 
-[https://www.thingiverse.com/thing:7102121](https://www.thingiverse.com/thing:7102121)
+[https://makerworld.com/ja/models/1702596-rhythmica15#profileId-1805689](https://makerworld.com/ja/models/1702596-rhythmica15#profileId-1805689)
 
 ## Build Instructions
 

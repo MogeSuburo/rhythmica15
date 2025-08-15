@@ -48,7 +48,7 @@ This is a homemade macro pad specifically designed for playing with the Bard job
 * Enameled wire 0.6mm 16cm
 * 3D Print Parts<br>
   **Data Thingiverse** 
-[https://www.thingiverse.com/thing:7102121](https://www.thingiverse.com/thing:7102121)
+[https://makerworld.com/ja/models/1702596-rhythmica15#profileId-1805689](https://makerworld.com/ja/models/1702596-rhythmica15#profileId-1805689)
 
 ## ビルド方法
 
