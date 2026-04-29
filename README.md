@@ -83,7 +83,7 @@ Wire to the cols (vertical) and rows (horizontal) pins of the MCU.
 ![keymap](./image/pict12.png)
 The wiring is a bit messy, but make sure not to make mistakes.
 ![keymap](image/piano02.jpg)
-For stability, attach the weights to the case using double-sided tape.(Optin)
+For stability, attach the weights to the case using double-sided tape.(Option)
 ![keymap](image/piano03.jpg)
 Place EVA foam underneath to prevent the weight and switch wiring from directly connecting.
 ![keymap](image/piano04.jpg)
