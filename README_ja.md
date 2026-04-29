@@ -37,7 +37,7 @@ This is a homemade macro pad specifically designed for playing with the Bard job
 ---
 
 ## 部品一覧
-* 1 x RP2024-Zero
+* 1 x RP2040-Zero
 * 15 x diodes 1N4148
 * 15 x Mechanical switches
 * 6 x XDA Profile keycaps of choice
@@ -77,17 +77,21 @@ This is a homemade macro pad specifically designed for playing with the Bard job
 ダイオードのアノード側を横に折り曲げて、繋げていきます。
 ![keymap](./image/pict11.png)
 
-### 5.  RP2024-Zeroに配線してます。
-トップケースの左側にあるMCUのマウントにRP2024-Zeroを取っ付けます。
+### 5.  RP2040-Zeroに配線してます。
+トップケースの左側にあるMCUのマウントにRP2040-Zeroを取っ付けます。
 ![keymap](./image/mcu.png)
 cols(縦)とrows横の列のMCUに配線していきます。
 ![keymap](./image/pict12.png)
 ちょっと雑な配線になっていますが、間違えないように配線していきます。
-![keymap](./image/pict02.png)
+![keymap](image/piano02.jpg)
+安定性を確保するため、両面テープを使って重りをケースに取り付けてください。
+![keymap](image/piano03.jpg)
+おもりとスイッチ配線が直接接続しないようにEVAフォームを敷きます。
+![keymap](image/piano04.jpg)
 
 ### 6.  ファームウェアを書き込み、Vialでキーマップを設定します。
-RP2024-ZeroをUSBでパソコンに接続し、bootスイッチを押しながら、resetスイッチを押して、同時に離します。<br>
-すると、RP2024-Zeroがドライブとして認識しますので、firmwareフォルダ内にある「rhythmica15_vial.uf2」を書き込んでください。<br>
+RP2040-ZeroをUSBでパソコンに接続し、bootスイッチを押しながら、resetスイッチを押して、同時に離します。<br>
+すると、RP2040-Zeroがドライブとして認識しますので、firmwareフォルダ内にある「rhythmica15_vial.uf2」を書き込んでください。<br>
 vialをサイトにアクセスし、Rhythmica15を認識させます。<br>
 各キーが正常に動作するかMatrix testerを使って確認してください。
 

@@ -36,7 +36,7 @@ It was created to make in-game performance more comfortable by adopting the same
 ---
 
 ## Parts List
-* 1 x RP2024-Zero
+* 1 x RP2040-Zero
 * 15 x diodes 1N4148
 * 15 x Mechanical switches
 * 6 x XDA Profile keycaps of choice
@@ -76,17 +76,21 @@ Solder the anode side to the switch pin.
 Bend the anode side of the diode sideways and connect them.
 ![keymap](./image/pict11.png)
 
-### 5. Wiring to RP2024-Zero.
-Mount the RP2024-Zero on the MCU mount on the left side of the top case.
+### 5. Wiring to RP2040-Zero.
+Mount the RP2040-Zero on the MCU mount on the left side of the top case.
 ![keymap](./image/mcu.png)
 Wire to the cols (vertical) and rows (horizontal) pins of the MCU.
 ![keymap](./image/pict12.png)
 The wiring is a bit messy, but make sure not to make mistakes.
-![keymap](./image/pict02.png)
+![keymap](image/piano02.jpg)
+For stability, attach the weights to the case using double-sided tape.
+![keymap](image/piano03.jpg)
+Place EVA foam underneath to prevent the weight and switch wiring from directly connecting.
+![keymap](image/piano04.jpg)
 
 ### 6. Write the firmware and set the keymap with Vial.
-Connect the RP2024-Zero to your PC via USB, press and hold the boot switch, then press the reset switch, and release both at the same time.<br>
-RP2024-Zero will be recognized as a drive, so write "rhythmica15_vial.uf2" from the firmware folder.<br>
+Connect the RP2040-Zero to your PC via USB, press and hold the boot switch, then press the reset switch, and release both at the same time.<br>
+RP2040-Zero will be recognized as a drive, so write "rhythmica15_vial.uf2" from the firmware folder.<br>
 Access the Vial site and recognize Rhythmica15.<br>
 Check each key with Matrix tester to make sure they work properly.
 
