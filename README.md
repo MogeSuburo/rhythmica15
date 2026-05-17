@@ -100,7 +100,7 @@ The firmware folder contains a file named profile01.vil.<br>
 Please apply this file on the Vial website.<br>
 The resulting keymap will look like the image below.<br>
 
-![vialkeymap](./image/vial.png)
+![vialkeymap](./image/vial01.png)
 
 Tap M0: Octave up<br>
 Tap M1: Octave down<br>
